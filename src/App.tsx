@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import surprise from "./assets/surprise.svg"
 export default function Page() {
   const [noCount, setNoCount] = useState(0);
   const [yesPressed, setYesPressed] = useState(false);
@@ -71,7 +72,7 @@ export default function Page() {
     <div className="-mt-16 flex h-screen flex-col items-center justify-center">
       {yesPressed ? (
         <>
-          <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
+          <img src="https://media.tenor.com/tEo2lRjrEuEAAAAi/love-it-kiss.gif" />
           <div className="my-4 text-4xl font-bold">
             WOOOOOO!!! I love you baby!! ;))
           </div>
@@ -79,8 +80,8 @@ export default function Page() {
       ) : (
         <>
           <img
-            className="h-[200px]"
-            src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif"
+            className="h-[200px] animate-pulse"
+            src={"https://media.tenor.com/hw67rqHr4eEAAAAi/kiss-hug.gif"}
           />
           <h1 className="my-4 text-4xl">Will you be my Valentine?</h1>
           <div className="flex items-center">
